@@ -1,0 +1,9 @@
+version: '3'
+services:
+  scheduler-app:
+    container_name: scheduler-app
+    build: .
+    volumes:
+      - ./docs:/app/docs
+    environment:
+      - PYTHONUNBUFFERED=1
